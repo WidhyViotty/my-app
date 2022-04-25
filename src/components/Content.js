@@ -1,13 +1,14 @@
-const Content = (props) => {
-  console.log(name + text);
+import Title from "./Title";
+import Description from "./Description";
 
+const Content = (props) => {
   const name = props.name;
   const text = props.text;
 
   return (
-    <div>
-      <h1>{name}</h1>
-      <p>{text}</p>
+    <div className="content">
+      <Title name={name} />
+      <Description text={text} />
     </div>
   );
 };
