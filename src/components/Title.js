@@ -1,8 +1,8 @@
 const Title = (props) => {
-  console.log(props.title);
-  const title = props.title;
+  console.log(props.name);
+  const name = props.name;
 
-  return <p className="title">title</p>;
+  return <p className="title">{name}</p>;
 };
 
 export default Title;

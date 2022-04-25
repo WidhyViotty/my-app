@@ -1,7 +1,15 @@
-const Content = () => {
+const Content = (props) => {
   console.log(name + text);
 
-  return (<h1>{name}</h1>), (<p>{text}</p>);
+  const name = props.name;
+  const text = props.text;
+
+  return (
+    <div>
+      <h1>{name}</h1>
+      <p>{text}</p>
+    </div>
+  );
 };
 
 export default Content;
